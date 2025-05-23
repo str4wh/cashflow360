@@ -1,4 +1,6 @@
-💼 CashFlow360
+💼** CashFlow360**
+
+
 CashFlow360 is a comprehensive business management platform designed to simplify the tracking of sales, debts, requisitions, and banking operations. Built with a modern tech stack (React, Node.js, MongoDB), CashFlow360 enables small and medium-sized businesses to manage accounts, monitor cash flow, and generate actionable insights — all from a single dashboard.
 
 🧩 Features
