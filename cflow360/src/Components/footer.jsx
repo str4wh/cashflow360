@@ -1,5 +1,6 @@
 import React from 'react'
 import MyLogo from "../assets/logo.png";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -14,14 +15,14 @@ function Footer() {
             </div>
 
             {/* quick links*/}
-            <div className="pl-12">
+            <div>
                 <h3 class="font-bold text-4xl">Quick Links</h3>
-                <ul className="py-8">
-                        <li className="py-2 hover:bg-green-400 px-3 rounded transition duration-200 font-semibold"><a  href="#">Home</a></li>
-                        <li className="py-2 hover:bg-green-400 px-3 rounded transition duration-200 font-semibold"><a  href="#">Sign up</a></li>
-                        <li className="py-2 hover:bg-green-400 px-3 rounded transition duration-200 font-semibold"><a  href="#">Log In</a></li>
-                        <li className="py-2 hover:bg-green-400 px-3 rounded transition duration-200 font-semibold"><a  href="#">How to get started</a></li>
-                    </ul>
+                <ul className="py-8 flex flex-col space-y-2 font-semibold">
+                    <Link className="hover:bg-green-400 px-3 py-2 rounded transition duration-200" to="/">Home</Link>
+                    <Link className="hover:bg-green-400 px-3 py-2 rounded transition duration-200" to="../signup">Sign Up</Link>
+                    <Link  className="hover:bg-green-400 px-3 py-2 rounded transition duration-200" to="../login">Log in</Link>
+                    <Link  className="hover:bg-green-400 px-3 py-2 rounded transition duration-200" to="../howtogetstarted">How to get started</Link>
+                </ul>
             </div>
 
             {/* contact info*/}
